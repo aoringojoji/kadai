@@ -8,6 +8,21 @@
 	<link rel="icon" href="アイコン 1000.png">
 </head>
 <body>
+	<!--====ページ読み込み前のロード画面====-->
+	<div id="page_loading">
+	<div id="load_area">
+	<div class="loader">Loading...</div>
+	<div id="page_loading_text"></div>
+	<p class="load_p">
+	<span class="load_h">
+	読み込み中
+	</span>
+	<br>しばらくお待ちください。<br class="load_spbr">
+	</p>
+	</div>
+	</div>
+	<!--====END ページ読み込み前のロード画面====-->
+
 <header>
 	<table>
 		<h1 class="h1_1">課題研究</h1>
@@ -32,25 +47,27 @@
 	<h2 class="h2_1">作品紹介</h2>
 		<table>
 		<tr>
-			<td><img class = "zoom1" src="さくらゆき　アイコン.png" alt="アイコン" width="500" height="500">
+			<td><div class="list-thumb1"><img src="さくらゆき　アイコン.png" alt="アイコン" width="500" height="500"></div>
 				<p>このイラストはアイビスペイントを使って描いたもので「星のカービィ」と北海道内でのみ住んでいる「シマエナガ」を合わせたものになります。
 					周りにはフルーツや星のカービィに出てくるアイテムを描きました。</p></td>
 			
-			<td><img class = "zoom1" src="アイコン 1000.png" alt="アイコン width="500" height="500">
+			<td><div class="c-bnr.radius"><img src="アイコン 1000.png" alt="アイコン width="500 height="500"></div>
 				<p>この画像は自分をアイコンで表現したものです。
 					魔法陣っぽい周りの枠と4月の誕生石であるダイヤモンドで構成されていて、アイコンが小さくなっても見えるように工夫しました。</p></td>
 		</tr>
 		<tr>
-			<td><img class = "zoom2" src="ぬえ鯖　建築勢募集中１.png" alt="サムネ" width="660" height="380">
+			<td><div class="list-thumb3"><img src="ぬえ鯖　建築勢募集中１.png" alt="サムネ" width="660" height="380"></div>
 				<p>この２つの画像はYouTubeなどの動画配信サービスで表示されているサムネを意識して作ったものです。
 					目を惹くデザインと瞬時に情報が入ってくるように文字を大きく必要な情報だけを載せるように意識しました。</p></td>
-			<td><img class = "zoom2" src="ぬえ鯖　一応建築勢募集中.png" alt="サムネ" width="660" height="380">
+			<td><div class="list-thumb4"><img src="ぬえ鯖　一応建築勢募集中.png" alt="サムネ" width="660" height="380"></div>
 				<p>こちらの画像はさらに背景が映えるように全体的に明るく色鮮やかになるように工夫しました。
 					そしてこれらの画像すべてを画像編集アプリである「canva」を使って編集しました。
 					</p></td>
 		</tr>
 		<tr>
-			<td><video src = "待機画面１.mp4" alt="待機画面" width="660" height="380" controls loop></video><p>この動画は待機画面と言って、ライブ配信をする配信者さんやＶtuberさんが使っていて、主に音量調整だったり正しく配信が始まっているかの確認など、配信の準備中に使われます。</p></td>
+			<td><div class="list-thumb5"><video src = "待機画面１.mp4" alt="待機画面" width="660" height="380" controls loop></video></div>
+				<p>この動画は待機画面と言って、ライブ配信をする配信者さんやＶtuberさんが使っていて、
+					主に音量調整だったり正しく配信が始まっているかの確認など、配信の準備中に使われます。</p></td>
 		</tr>
 		</table>
 </main>
@@ -69,6 +86,16 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/8-1-2/js/8-1-2.js"></script>
+
+<!--==============ロード画面のJQuery読み込み===============-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+<!--IE11用※対応しなければ削除してください-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+<!--自作のJS-->
+<script src="javascript.js"></script>
+<!--==============END ロード画面のJQuery読み込み===============-->
 
 </body>
 </html>
